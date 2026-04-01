@@ -1,0 +1,46 @@
+{
+  "name": "echo3s-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Echo3s — AI-powered multi-voice audiobook creation platform",
+  "type": "module",
+  "bin": {
+    "echo3s-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "echo3s",
+    "audiobook",
+    "ai",
+    "text-to-speech",
+    "tts",
+    "multi-voice",
+    "pdf-to-audiobook",
+    "book-to-audiobook",
+    "self-publishing",
+    "indie-author"
+  ],
+  "author": "Echo3s <hello@echo3s.io>",
+  "license": "MIT",
+  "homepage": "https://echo3s.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Echo3s-io/echo3s-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "@types/node": "^22.12.0"
+  }
+}
