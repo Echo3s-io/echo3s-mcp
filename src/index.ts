@@ -3,10 +3,11 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
-const server = new McpServer({
-  name: "echo3s-mcp",
-  version: "1.0.0",
-});
+function createServer() {
+  const server = new McpServer({
+    name: "echo3s-mcp",
+    version: "1.0.0",
+  });
 
 // ---------------------------------------------------------------------------
 // Tool: get_echo3s_overview
@@ -731,11 +732,21 @@ server.tool(
   })
 );
 
+  return server;
+}
+
+// ---------------------------------------------------------------------------
+// Smithery sandbox export for capability scanning
+// ---------------------------------------------------------------------------
+export default createServer;
+export { createServer as createSandboxServer };
+
 // ---------------------------------------------------------------------------
 // Start the server
 // ---------------------------------------------------------------------------
 async function main() {
   const transport = new StdioServerTransport();
+  const server = createServer();
   await server.connect(transport);
 }
 
