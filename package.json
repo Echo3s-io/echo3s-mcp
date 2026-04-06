@@ -1,6 +1,6 @@
 {
   "name": "echo3s-mcp",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "mcpName": "io.github.Echo3s-io/echo3s-mcp",
   "description": "MCP server for Echo3s — AI-powered multi-voice audiobook creation platform",
   "type": "module",
