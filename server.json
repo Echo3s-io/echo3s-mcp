@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Echo3s-io/echo3s-mcp",
+  "description": "MCP server for Echo3s — AI-powered multi-voice audiobook creation platform. Provides tools for product overview, pricing, language support, use cases, onboarding, FAQ, alternatives comparison, and cost estimation.",
+  "repository": {
+    "url": "https://github.com/Echo3s-io/echo3s-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "echo3s-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": []
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://echo3s-mcp.morning-dawn-7f4e.workers.dev/mcp"
+    }
+  ]
+}
