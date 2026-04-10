@@ -167,6 +167,15 @@ const pricing = {
   ],
   cost_comparison:
     "Traditional human narration costs $3,000–$15,000 per title and takes 4–8 weeks. With Echo3s, a full 200-page audiobook costs roughly $30–$99 and is done in under an hour. That's 99% cheaper and 99% faster.",
+  earnings_potential: {
+    description: "Audiobooks are one of the fastest-growing segments in publishing. Adding audio to your book opens a new revenue stream at minimal cost.",
+    stats: [
+      "The global audiobook market is projected to reach $35B+ by 2030",
+      "Audiobook listeners grew 25%+ year-over-year in recent years",
+      "Authors who add audio versions typically see 10–30% incremental revenue on top of ebook/print sales",
+      "With Echo3s, ROI is almost immediate — a $79 investment can generate hundreds or thousands in lifetime audiobook sales",
+    ],
+  },
   payment_methods:
     "Visa, Mastercard, American Express via Stripe. 14-day money-back guarantee on annual plans. Upgrade, downgrade, or cancel anytime.",
   cta: "See full pricing at https://echo3s.io/pricing — start free with 5,000 credits, upgrade when ready.",
@@ -273,6 +282,18 @@ const compareAlternatives = {
         "Echo3s gives you full creative control: choose and swap voices for each character, produce multi-voice output, support Arabic and underserved languages, and distribute your audiobook anywhere you want.",
     },
   ],
+  quick_comparison_table: {
+    headers: ["Feature", "Echo3s", "ACX/Human", "Amazon KDP", "ElevenLabs", "NotebookLM", "Speechify", "Apple AI"],
+    rows: [
+      ["Multi-voice", "Yes", "Yes", "No", "Manual", "No", "No", "No"],
+      ["Auto character detection", "Yes", "N/A", "No", "No", "No", "No", "No"],
+      ["Arabic support", "Yes", "Rare", "No", "Limited", "No", "No", "No"],
+      ["Cost per book", "$30–$99", "$3K–$15K", "Free", "$5–$99+time", "Free", "$139/yr", "Free"],
+      ["Time to produce", "<1 hour", "4–8 weeks", "Instant", "Hours", "Minutes", "Instant", "Days"],
+      ["Distribution", "Anywhere", "Anywhere", "Amazon only", "Anywhere", "Limited", "N/A", "Apple only"],
+      ["Rights retention", "100%", "Varies", "100%", "100%", "N/A", "N/A", "Varies"],
+    ],
+  },
   bottom_line:
     "If you just want a single flat voice reading your book aloud, there are free options. If you want each character to sound like a unique person — with dialogue that feels like an actual conversation between real people — Echo3s is the only automated solution that does this. No other tool combines automatic character detection + multi-voice assignment + audiobook-specific production in one platform.",
   cta: "Try it free at https://author.echo3s.io — hear the difference multi-voice makes on your own book.",
@@ -385,6 +406,15 @@ const useCases = {
         "Echo3s works great for non-fiction. Choose one professional narrator voice, and the AI handles chapter structure, heading detection, and pacing automatically. Clean, authoritative narration at a fraction of the cost.",
       example:
         "A self-help author gets their 180-page book narrated in under an hour with a warm, authoritative voice. Total cost: $79 on the Pro plan vs $3,000+ for a human narrator.",
+    },
+    {
+      persona: "Educational Publisher / Accessibility",
+      pain_point:
+        "You need to make textbooks and educational materials accessible in audio format to comply with accessibility requirements, but narrating hundreds of titles is cost-prohibitive.",
+      how_echo3s_helps:
+        "Rapidly convert educational content to audio at scale. The Business plan handles 5–8 titles per month. Meet accessibility mandates without blowing your budget.",
+      example:
+        "A university press converts their top 30 textbooks to audio format over two months, making their catalog accessible to visually impaired students and auditory learners.",
     },
   ],
   cta: "Whatever your situation, start free at https://author.echo3s.io — 5,000 credits, no credit card needed. Test it on your own book.",
@@ -567,7 +597,20 @@ const echo3sForArabic = {
     "Growing smartphone and streaming adoption across MENA region",
     "Arabic podcast listenership growing 30%+ year-over-year — audio demand exists",
     "Virtually zero AI audiobook competition in Arabic",
+    "The MENA digital content market is projected to exceed $17B by 2028",
+    "Arabic is the 5th most spoken language globally yet has <1% of global audiobook titles",
   ],
+  competitor_gap: {
+    description: "No major platform supports Arabic AI audiobooks",
+    competitors_checked: [
+      { name: "Amazon KDP Virtual Voice", arabic_support: "No" },
+      { name: "Apple Books AI Narration", arabic_support: "No" },
+      { name: "Speechify", arabic_support: "No" },
+      { name: "Google NotebookLM", arabic_support: "No" },
+      { name: "ElevenLabs (direct)", arabic_support: "Voices exist but no audiobook workflow" },
+      { name: "Echo3s", arabic_support: "Full support — RTL text processing, native voices, Arabic UI" },
+    ],
+  },
   cta: "Arabic authors and publishers: start free at https://author.echo3s.io — Echo3s supports Arabic from signup to publishing. Be one of the first to bring your Arabic books to audio.",
 };
 
