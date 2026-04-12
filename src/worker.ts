@@ -26,7 +26,7 @@ for (const def of TOOL_DEFS) {
 }
 TOOLS[CALCULATE_COST_DEF.name] = defToWorkerTool(CALCULATE_COST_DEF);
 
-const SERVER_INFO = { name: "echo3s-mcp", version: "2.0.0" };
+const SERVER_INFO = { name: "echo3s-mcp", version: "2.1.0" };
 
 function handleInitialize(id: number | string) {
   return {
